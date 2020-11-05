@@ -1,38 +1,243 @@
-.App {
+ @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Yeon+Sung&display=swap');
+
+ * {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #444;
+  background-image: url('./images/maytheForceBeWithYou.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Yeon Sung', cursive;
+  font-family: 'Big Shoulders Text', cursive;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/************************ films style ***********************/
+
+.film-item{
+  width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  padding: 10px;
+  margin: 10px auto;
+  color:  #a0edce;
+	background-color: #060606ab;
+	border: 3px soild #0742c20e;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.film-item button {
+  max-width: 30%;  
+  background-color:#210101ab;
+  color: #FFE400;
+  font-size: 1.5rem;
+	text-align: center;
+	margin: 3% auto;
+  outline: none;
+	border-radius: 5px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.film-item button:hover{
+  border: 2px solid  #14A76C;
+}
+
+.opening_crawl{
+  background:url('./images/starSky.jpeg') ;
+  background-size: cover;
+  overflow: hidden;
+  color: #ffb13a;
+  border-radius: 20px;
+  height: 100px;
+  margin: 10px auto;
+  padding: 20px;
+
+}
+.crawl-text{
+  width: 100%;
+  transform:perspective(10px)rotateX(9deg) ;
+  animation: scrollCrawl 59s linear;
+  animation-iteration-count: infinite;
+  text-align: justify;
+  
+}
+@keyframes scrollCrawl {
+  0%{
+    transform:perspective(40px)rotateX(15deg)translateY(150px) ;
+  opacity: 1;
   }
+  50%{
+  opacity: 1;
+  }
+  100%{
+    transform:perspective(10px)rotateX(40deg)translateY(-1000px) ;
+  opacity: 0;
+  }
+  }
+
+.hide {
+	display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/************************ char style ***********************/
+.char-list {
+  padding: 1%;
+  width: 100%;
+  text-align: center;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.char-item {
+  width: calc((100% / 3) - 20px);
+  margin: 10px auto;
+  display: flex;
+  font-size: 1,5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  border-radius: 20px;  
+	background-color: #060606ab;
+  border: 5px solid #0742c20e;
+  font-size: 1.2rem;
+  color:  #a0edce;
+}
+.char-item:nth-child(even) {
+  background-color:#210101ab;
+  color: #FFE400;
+}
+.char-item .charDetails{
+  color:  #FFE400;
+}
+.char-item:nth-child(even) .charDetails{
+  color:  #a0edce;
+}
+.char-item h2 {
+  cursor: pointer;
+  color:  #14A76C;
+
+} 
+.char-item h2:hover {
+  cursor: pointer;
+  color:  #02f795;
 }
 
-.App-link {
-  color: #61dafb;
+.details{
+  padding-top: 15px;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  padding: 2px;
 }
+/************************ input style ***********************/
+
+.search-input {
+  width: 12rem;
+  display: block;
+  margin: 2rem auto;
+  height: 2rem;
+  border: none;
+  padding: 1rem;
+  border-bottom: 2px solid #14A76C;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #14A76C;
+
+  font-size: 1rem;
+}
+::-moz-placeholder {
+  color: #14A76C;
+  font-size: 1rem;
+}
+:-ms-input-placeholder {
+  color: #14A76C;
+  font-size: 1rem;
+}
+:-moz-placeholder {
+ color: #14A76C;
+  font-size: 1rem;
+}
+/************************ rate input style ***********************/
+
+input[type='radio']{
+  display:none; 
+ }
+ .stars{
+   cursor: pointer;
+   transition: color 200ms;
+
+ }
+
+/************************ other media style ***********************/
+
+@media (max-width: 950px) {
+  .film-item{
+    width: 50%;
+  }
+  .opening_crawl{
+    height: 100px;
+    margin: 0px auto;
+    padding: 0px;
+  
+  
+  }
+  .crawl-text{
+    transform:perspective(40px)rotateX(9deg) ;
+   
+  }
+  @keyframes scrollCrawl {
+    0%{
+      transform:perspective(80px)rotateX(15deg)translateY(150px) ;
+    opacity: 1;
+    }
+    50%{
+    opacity: 1;
+    }
+    100%{
+      transform:perspective(10px)rotateX(40deg)translateY(-1000px) ;
+    opacity: 0;
+    }
+    }
+
+}
+
+@media (max-width: 640px) {
+    .film-item{
+      width: 90%;
+    }
+    @keyframes scrollCrawl {
+      0%{
+        transform:perspective(10px)rotateX(10deg)translateY(100px) ;
+      opacity: 1;
+      }
+      50%{
+      opacity: 1;
+      }
+      100%{
+        transform:perspective(5px)rotateX(20deg)translateY(-1000px) ;
+      opacity: 0;
+      }
+      }
+      .char-item {
+        width: calc(100% - 40px);
+        margin: 10px auto;
+        font-size: 1rem;
+      }
+   
+  }
