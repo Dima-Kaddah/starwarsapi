@@ -68,7 +68,6 @@ const Game = () => {
 
   return (
     <div >
-      <h1>lets play</h1>
       <Board cards={cards} handleClick={handleClick} flipped={flipped} disabled={disabled} solved={solved} dimension={dimension} />
     </div >
   );

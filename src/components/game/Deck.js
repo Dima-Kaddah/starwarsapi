@@ -9,16 +9,19 @@ function shuffle(array) {
   return _array;
 }
 
+// '1', '2', '3', '4', '5', '6', '7', '8'
+
+
 const initializeDeck = () => {
   let id = 0;
   const cards = [
     'BB8',
     'C-3PO',
-    'h',
+    'han',
     'luke',
-    'rey',
+    'leia',
     'Snowtrooper2',
-    'droid',
+    'bd',
     'yoda'
   ].reduce((acc, type) => {
     acc.push({
