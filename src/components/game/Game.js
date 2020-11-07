@@ -8,6 +8,7 @@ const Game = () => {
   const [solved, setSolved] = useState([]);
   const [disabled, setDisabled] = useState(false);
   const [dimension, setDimension] = useState(false);
+  const [youWin, setYouWin] = useState(false);
 
   useEffect(() => {
     resizeBoard();
@@ -18,6 +19,11 @@ const Game = () => {
     perloadImages();
   }, [cards]);
 
+  useEffect(() => {
+    if (solved.length === 16) {
+      setYouWin(true);
+    }
+  }, [solved]);
 
   const handleClick = (id) => {
     setDisabled(true);
@@ -68,7 +74,7 @@ const Game = () => {
 
   return (
     <div >
-      <Board cards={cards} handleClick={handleClick} flipped={flipped} disabled={disabled} solved={solved} dimension={dimension} />
+      <Board cards={cards} handleClick={handleClick} flipped={flipped} disabled={disabled} solved={solved} dimension={dimension} youWin={youWin} />
     </div >
   );
 };

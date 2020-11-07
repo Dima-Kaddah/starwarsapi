@@ -5,6 +5,7 @@ import StarWarsChars from './pages/StarWarsChars';
 import HomePage from './pages/HomePage';
 import MainNavigation from './components/navigation/MainNavigation';
 import GamePage from './pages/GamePage';
+import WinPage from './components/game/WinPage';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route exact path='/films' component={StarWarsFilms} />
             <Route exact path='/chars' component={StarWarsChars} />
             <Route exact path='/game' component={GamePage} />
+            <Route exact Path='/win' component={WinPage} />
             <Redirect to='/' />
           </Switch>
         </main>

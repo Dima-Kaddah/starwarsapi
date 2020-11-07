@@ -33,7 +33,7 @@ body{
   font-size: 1.2rem;
 }
 
-.film-item button {
+.film-item button, button{
   max-width: 30%;  
   background-color:#210101ab;
   color: #FFE400;
