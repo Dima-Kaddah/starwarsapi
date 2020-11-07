@@ -70,17 +70,78 @@
 
 } 
 
- @keyframes logoDance {
+@keyframes logoDance {
   0%{
     width: 200%;
     transform: translateX(-50%) translateY(-50%) scale(1);
     opacity: 1;
-    }
-    50%{
+  }
+  50%{
     opacity: 1;
-    }
-    100%{
-      transform: translateX(-50%) translateY(-50%) scale(0.1);
-      opacity: 0;
-    }
-  } 
+  }
+  100%{
+    transform: translateX(-50%) translateY(-50%) scale(0.1);
+    opacity: 0;
+  }
+}
+  
+
+.info{
+  color:#FFE400 ;
+  color:  #a0edce;
+
+  font-size: 1.5rem;
+  position: absolute;
+  top:30%;
+  left:50px;
+  opacity: 1;
+  animation: opasText 10s ease 0s ; 
+}
+
+.info p{
+  position: relative;
+  animation: allInfo 5s ease-in-out 10s ; 
+}
+.info p a{
+  color:  #a0edce;
+  color:#FFE400 ;
+
+  text-decoration: none;
+}
+.enjoy{
+  width: 30%;
+  position: relative;
+  animation: allInfo 5s ease-in-out 10s; 
+
+ }
+
+@keyframes allInfo {
+  0%{
+    left:-50px;
+  }
+  25%{
+    left:-40px;
+  }
+  50%{
+    left:-30px;
+  }
+  75%{
+    left:-20px;
+  }
+  100%{
+    left:-10px;
+  }
+} 
+
+@keyframes opasText {
+0%{
+  opacity:0;
+ }
+50%{
+  opacity:0;
+ }
+100%{
+  opacity:0;
+ }
+} 
+   
