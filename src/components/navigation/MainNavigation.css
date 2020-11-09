@@ -1,12 +1,12 @@
 .main-navigation__menu-btn {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   background: transparent;
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-right: 2rem;
+  margin-right: 6rem;
   cursor: pointer;
 }
 

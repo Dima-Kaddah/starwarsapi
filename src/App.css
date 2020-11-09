@@ -33,7 +33,7 @@ body{
   font-size: 1.2rem;
 }
 
-.film-item button, button{
+.film-item button{
   max-width: 30%;  
   background-color:#210101ab;
   color: #FFE400;
@@ -188,9 +188,21 @@ input[type='radio']{
   .opening_crawl{
     height: 150px;  
   }
+  .info{
+    padding-right: 15px;
+    top: 50%;
+  left:50%;
+    font-size: 1.3rem;
+    transform: translateX(-50%) translateY(-50%);
+
+  }
+  .enjoy{
+    width: 40%;
+  }
+  
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .film-item{
     width: 90%;
     }
@@ -198,6 +210,8 @@ input[type='radio']{
     width: calc(100% - 40px);
     margin: 10px auto;
     font-size: 1rem;
-      }
+  }
+  
+      
    
 }

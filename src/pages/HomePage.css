@@ -89,47 +89,57 @@
 .info{
   color:#FFE400 ;
   color:  #a0edce;
-
   font-size: 1.5rem;
   position: absolute;
   top:30%;
-  left:50px;
-  opacity: 1;
-  animation: opasText 10s ease 0s ; 
+  left:20px;
 }
 
-.info p{
+.p1{
   position: relative;
-  animation: allInfo 5s ease-in-out 10s ; 
+  opacity: 1;
+  animation: opasText 10s ease; 
+}
+.p2{
+  position: relative;
+  opacity: 1;
+  animation: opasText 12s ease ; 
+}
+.p3{
+  position: relative;
+  opacity: 1;
+  animation: opasText 14s ease  ; 
+}
+.p4{
+  position: relative;
+  opacity: 1;
+  animation: opasText 16s ease; 
+}
+.p5{
+  position: relative;
+  opacity: 1;
+  animation: opasText 18s ease ; 
 }
 .info p a{
   color:  #a0edce;
   color:#FFE400 ;
-
   text-decoration: none;
 }
 .enjoy{
   width: 30%;
   position: relative;
-  animation: allInfo 5s ease-in-out 10s; 
-
+  animation: allInfo 20s ease-in-out 0s;
  }
 
 @keyframes allInfo {
   0%{
-    left:-50px;
-  }
-  25%{
-    left:-40px;
+    bottom:-750px;
   }
   50%{
-    left:-30px;
-  }
-  75%{
-    left:-20px;
+    bottom:-400px;
   }
   100%{
-    left:-10px;
+    bottom:-0px;
   }
 } 
 
