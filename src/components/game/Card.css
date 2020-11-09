@@ -66,7 +66,7 @@
 .winImge{
   border-radius:20px;
   display: block;
-  width: 100%;
+  width: 50%;
 }
 
 .restbutton{
@@ -95,6 +95,6 @@
     padding: 1rem; 
   } 
   .winImge{
-    width: 50%;
+    width: 40%;
   }
 }
