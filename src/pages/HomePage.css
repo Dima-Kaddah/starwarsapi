@@ -59,7 +59,7 @@
 
 .starWarsLogo{
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   top: 50%;
   left:50%;
   width: 50%;
@@ -72,7 +72,7 @@
 
 @keyframes logoDance {
   0%{
-    width: 200%;
+    width: 110%;
     transform: translateX(-50%) translateY(-50%) scale(1);
     opacity: 1;
   }
@@ -84,8 +84,6 @@
     opacity: 0;
   }
 }
-  
-
 .info{
   color:#FFE400 ;
   color:  #a0edce;
@@ -94,7 +92,6 @@
   top:30%;
   left:20px;
 }
-
 .p1{
   position: relative;
   opacity: 1;
@@ -129,7 +126,6 @@
   width: 30%;
   position: relative;
   animation: allInfo 20s ease-in-out 0s;
-
  }
 
 @keyframes allInfo {
