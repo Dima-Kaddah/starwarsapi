@@ -18,11 +18,25 @@
 
     - **`http://localhost:3000`** 
       
-### :house: page 
+### Home page:
 
+  <p align="center">
+  <img src="/src/images/homePage.jpg"/></p>
+  
+### Films page:
 
-<p align="center">
-  <img src=""/></p>
+  <p align="center">
+  <img src="/src/images/filmsPage.jpg"/></p>
+  
+### Chars page:
+
+  <p align="center">
+  <img src="src/images/charsPage.jpg"/></p>
+  
+### Game page:
+
+  <p align="center">
+  <img src="/src/images/game.jpg"/></p>
                                                                                                                                
                                                                                                                               
 
