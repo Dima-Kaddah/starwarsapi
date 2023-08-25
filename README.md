@@ -42,7 +42,7 @@
 
 # Deployment : Heroku
 
-- [Star Wars App](https://starwars-13.herokuapp.com/)
+- [Star Wars App](https://bit.ly/StarWarsV2)
 
 
 # License
